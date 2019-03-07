@@ -7,7 +7,7 @@
 }
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
@@ -1685,3 +1685,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.wedding-parking h4 {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: #FF847C;
+  font-size: 20;
+}
