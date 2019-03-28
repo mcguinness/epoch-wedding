@@ -1703,3 +1703,11 @@ h1, h2, h3, h4, h5, h6 {
 .epoch {
   margin-top: 40px;
 }
+
+.faq  .desc h3 {
+  text-align: center;
+}
+
+.faq p:last-child {
+    margin-bottom: 60px;
+}
