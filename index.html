@@ -188,7 +188,7 @@
 							<script>
 								// RSVPify breaks on Safari so manually link instead.
 								var el = document.getElementById('rsvp-embed');
-								if(navigator.userAgent.indexOf('Safari') != -1) {
+								if(navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
 									var button = document.createElement('a');
         					button.setAttribute('href', 'https://epochwedding.app.rsvpify.com/');
         					button.setAttribute('class', 'btn btn-primary btn-lg');
