@@ -206,18 +206,25 @@
 									div.appendChild(text)
 									el.appendChild(div);
 								} else {
+									var iframe = document.createElement('iframe');
+        					iframe.setAttribute('id', 'RSVPifyIFrame');
+        					iframe.setAttribute('src', 'https://epochwedding.app.rsvpify.com/?embed=1&js=1');
+        					iframe.setAttribute('style', 'width:100%; border:none;');
+        					iframe.setAttribute('onload', 'window.parent.scrollTo(0,0)');
+        					iframe.setAttribute('allowtransparency', 'true');
+        					iframe.setAttribute('frameborder', '0');
+        					iframe.setAttribute('scrolling', 'no');
+        					el.appendChild(iframe);
+
 									var rsvpify = document.createElement('script');
-									rsvpify.setAttribute('src','//app.rsvpify.com/embed/500174860');
+									rsvpify.setAttribute('src','https://app.rsvpify.com/embed/500174860');
 									rsvpify.setAttribute('scrolling', 'yes');
 									el.appendChild(rsvpify);
 
 									var resizer = document.createElement('script');
-									resizer.setAttribute('src','//app.rsvpify.com/js/iframeResizer.min.js');
+									resizer.setAttribute('src','https://app.rsvpify.com/js/iframeResizer.min.js');
+									resizer.setAttribute('onload', "iFrameResize({autoResize: true,checkOrigin: false,heightCalculationMethod: 'max', enablePublicMethods: true}, '#RSVPifyIFrame');");
 									el.appendChild(resizer);
-
-									var inline = document.createElement('script');
-									inline.appendChild(document.createTextNode("iFrameResize({autoResize: true,checkOrigin: false,heightCalculationMethod: 'max', enablePublicMethods: true}, '#RSVPifyIFrame');"));
-									el.appendChild(inline);
 								}
 							</script>
 						</div>
