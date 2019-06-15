@@ -67,7 +67,6 @@
 	          <ul class="nav navbar-nav navbar-right">
 	            <li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
 	            <li><a href="#qbootstrap-when-where" data-nav-section="qbootstrap-when-where"><span>When &amp; Where</span></a></li>
-	            <li><a href="#rsvp" data-nav-section="rsvp"><span>RSVP</span></a></li>
 	            <li><a href="#parking" data-nav-section="parking"><span>Parking</span></a></li>
 	            <li><a href="#faq" data-nav-section="faq"><span>FAQs</span></a></li>
 	            <li><a href="#registry" data-nav-section="registry"><span>Registry</span></a></li>
@@ -238,71 +237,6 @@
 			</div>
 
 
-		</div>
-	</div>
-
-	<div id="rsvp" data-section="rsvp" data-stellar-background-ratio="0.5">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="col-md-12 text-center section-heading svg-sm colored">
-						<img src="images/flaticon/svg/005-two.svg" class="svg" alt="">
-						<h2>You Are Invited</h2>
-						<p><strong>Please confirm all meal choices for your party by June 5th!</strong></p>
-						<p>If you have any issues, please email us at <a href="mailto:info@epoch.wedding">info@epoch.wedding</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="row animate-box">
-				<div class="col-md-10 col-md-offset-1">
-					<div class="wedding-events">
-						<div id="rsvp-embed" class="desc">
-							<script>
-								// RSVPify breaks on Safari so manually link instead.
-								var el = document.getElementById('rsvp-embed');
-								if(navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
-									var button = document.createElement('a');
-        					button.setAttribute('href', 'https://epochwedding.app.rsvpify.com/');
-        					button.setAttribute('class', 'btn btn-primary btn-lg');
-        					button.setAttribute('style', 'margin-bottom: 10px;');
-        					button.setAttribute('target', '_blank');
-        					button.appendChild(document.createTextNode('RSVP NOW'));
-
-        					var text = document.createElement('p');
-        					text.appendChild(document.createTextNode("Please click the button above to continue with your RSVP."));
-
-									var div = document.createElement('div');
-									div.setAttribute('class', 'text-center');
-									div.appendChild(button);
-
-									div.appendChild(text)
-									el.appendChild(div);
-								} else {
-									var iframe = document.createElement('iframe');
-        					iframe.setAttribute('id', 'RSVPifyIFrame');
-        					iframe.setAttribute('src', 'https://epochwedding.app.rsvpify.com/?embed=1&js=1');
-        					iframe.setAttribute('style', 'width:100%; border:none;');
-        					iframe.setAttribute('onload', 'window.parent.scrollTo(0,0)');
-        					iframe.setAttribute('allowtransparency', 'true');
-        					iframe.setAttribute('frameborder', '0');
-        					iframe.setAttribute('scrolling', 'no');
-        					el.appendChild(iframe);
-
-									var rsvpify = document.createElement('script');
-									rsvpify.setAttribute('src','https://app.rsvpify.com/embed/500174860');
-									rsvpify.setAttribute('scrolling', 'yes');
-									el.appendChild(rsvpify);
-
-									var resizer = document.createElement('script');
-									resizer.setAttribute('src','https://app.rsvpify.com/js/iframeResizer.min.js');
-									resizer.setAttribute('onload', "iFrameResize({autoResize: true,checkOrigin: false,heightCalculationMethod: 'max', enablePublicMethods: true}, '#RSVPifyIFrame');");
-									el.appendChild(resizer);
-								}
-							</script>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
 	</div>
 
